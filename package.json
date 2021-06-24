@@ -1,0 +1,16 @@
+{
+  "name": "bao-master-farmer-xdai",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy vitalsine85/bao-master-farmer-xdai --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ --debug",
+    "create-local": "graph create --node http://localhost:8020/ vitalsine85/bao-master-farmer-xdai",
+    "remove-local": "graph remove --node http://localhost:8020/ vitalsine85/bao-master-farmer-xdai",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 vitalsine85/bao-master-farmer-xdai"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.20.0",
+    "@graphprotocol/graph-ts": "0.20.0"
+  }
+}
